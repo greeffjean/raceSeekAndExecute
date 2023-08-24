@@ -4,6 +4,9 @@ The inspiration behind this function came from a need to mutate the DOM after so
 
 **Function Props**  
 `boolean` - any value that you want to seek, 
+<br/>
 `callback` - callback function to execute once `boolean` has been validated as a truthy value, 
+<br/>
 `interval` - how often the seeking and validate process will occur, defaults to `1000ms`, 
+<br/>
 `timeout` - timeout that determines when your `setInterval` loop will terminate, defaults to `10000ms`
