@@ -9,9 +9,10 @@ Props:
 - timeout: timeout that determines when your `setInterval` loop will terminate, defaults to `10000ms`
 */
 const raceSeekAndExecute = (boolean, callback, interval = 1000, timeout = 10000) => {
+    
     const _interval = setInterval(() => {
         if (boolean) {
-            callback();
+            if (typeof callback === "function") callback();
             clearInterval(_interval);
         }
     }, interval);
