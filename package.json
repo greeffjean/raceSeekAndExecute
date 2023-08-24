@@ -1,6 +1,6 @@
 {
   "name": "raceseekandexecute",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The inspiration behind this function came from a need to mutate the DOM after some JS scripts rendered in DOM content, this process is not instant, thus a `racy` function was born enjoy! ",
   "main": "index.js",
   "scripts": {
