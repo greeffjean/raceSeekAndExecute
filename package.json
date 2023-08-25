@@ -1,5 +1,5 @@
 {
-  "name": "race-seek-and-execute",
+  "name": "raceseekandexecute",
   "version": "1.2.0",
   "description": "The inspiration behind this function came from a need to perform an action after a script created and rendered new DOM content, as the rendering process takes a little bit of time, a `racy` function was born enjoy!",
   "main": "index.js",
