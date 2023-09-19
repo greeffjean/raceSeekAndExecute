@@ -5,10 +5,10 @@ The inspiration behind this function came from a need to perform an action after
 > Mission - Keep searching for a DOM node for `x` amount of time, at `x` intervals and once found, perform `x` action.
 
 **Function Props**  
-`query` - query string - (A string containing one or more selectors to match. This string must be a valid CSS selector string),
+`query` - query string - (A string containing one selectors to match. This string must be a valid CSS selector string),
 <br/>
 `callback` - callback function to execute once `query` has been validated as a truthy value, 
 <br/>
-`interval` - how often the seeking and validate process will occur, defaults to `1000ms`, 
+`interval` - how often the validate the query, defaults to `1000ms`, 
 <br/>
-`timeout` - timeout that determines when your `setInterval` loop will terminate, defaults to `10000ms`
+`timeout` - determines when your `interval` loop will terminate, defaults to `10000ms`
