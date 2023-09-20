@@ -38,4 +38,4 @@ const raceSeekAndExecute = (
     if (!run) console.error(failedToRunMsg);
 };
 
-export { raceSeekAndExecute };
+module.exports = { raceSeekAndExecute };
