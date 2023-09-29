@@ -1,5 +1,5 @@
-const queryNotFoundMsg = "Your seek query timed-out!";
-const failedToRunMsg = "Please review your param types!"
+const QUERY_NOT_FOUND = "Your seek query timed-out!";
+const FAILED_TO_RUN = "Please review your param types!"
 
 /** 
 ### Objective - Seek and execute
@@ -20,6 +20,11 @@ const raceSeekAndExecute = (
     let _timeout;
     const run = typeof query === "string" && typeof callback === "function";
 
+    const clearTimers = () => {
+        clearTimeout(_timeout);
+        clearInterval(_interval);
+    };
+
     if (run) {
         _interval = setInterval(() => {
             const element = document.querySelector(query);
@@ -31,11 +36,13 @@ const raceSeekAndExecute = (
         }, interval);
 
         _timeout = setTimeout(() => {
-            console.error(queryNotFoundMsg);
+            console.error(QUERY_NOT_FOUND);
             clearInterval(_interval);
         }, timeout);
     }
-    if (!run) console.error(failedToRunMsg);
+
+    if (!run) console.error(FAILED_TO_RUN);
+    return { _timeout, _interval, clearTimers };
 };
 
 module.exports = { raceSeekAndExecute };

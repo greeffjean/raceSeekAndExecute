@@ -28,7 +28,3 @@ test("Seek domNode & execute callback after 2000ms", async () => {
     await addMarkup();
     await returnCB(cb).then((fn) => expect(fn.mock.calls.length).toEqual(1));
 }); 
-
-test("fn fails to run when props types are incorrect", () => {
-
-});
