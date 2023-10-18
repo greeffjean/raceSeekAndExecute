@@ -1,6 +1,6 @@
 {
   "name": "raceseekandexecute",
-  "version": "1.6.0",
+  "version": "2.0.1",
   "description": "The inspiration behind this function came from a need to perform an action after a script created and rendered new DOM content, as the rendering process takes a little bit of time, a `racy` function was born enjoy!",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "eslint": "^8.48.0",
     "jest": "^29.6.4",
     "jest-dom": "^4.0.0",
-    "jest-environment-jsdom": "^29.6.4",
+    "jest-environment-jsdom": "^29.7.0",
     "jsdom": "^22.1.0"
   },
   "devDependencies": {

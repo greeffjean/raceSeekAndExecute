@@ -2,8 +2,8 @@ import { raceSeekAndExecute } from "index";
 const query = "#dummy-testId";
 
 test("Seek domNode & execute callback after 2000ms", async () => {
-    const cb = jest.fn();
-    raceSeekAndExecute(query, cb, 500, 5000);
+    const callback = jest.fn();
+    raceSeekAndExecute({query, callback, interval: 500, timeout: 5000});
 
     const returnCB = (cb) => {
         return new Promise((resolve, reject) => {
@@ -26,5 +26,6 @@ test("Seek domNode & execute callback after 2000ms", async () => {
     };
 
     await addMarkup();
-    await returnCB(cb).then((fn) => expect(fn.mock.calls.length).toEqual(1));
+    await returnCB(callback).then((fn) => expect(fn.mock.calls.length).toEqual(1));
 }); 
+
