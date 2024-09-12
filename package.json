@@ -1,9 +1,9 @@
 {
   "name": "raceseekandexecute",
-  "version": "2.1.3",
+  "version": "2.2.5",
   "description": "Seek dom node at x intervals for x amount of time, once found execute x callback",
   "main": "dist/index.js",
-  "types": "dist/index.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "npx jest",
     "build": "webpack --mode production",
@@ -21,7 +21,7 @@
     "callback"
   ],
   "author": "Jean Greeff <greeffjean@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/greeffjean/raceSeekAndExecute/issues"
   },
