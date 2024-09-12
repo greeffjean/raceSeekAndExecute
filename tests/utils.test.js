@@ -1,4 +1,4 @@
-import { validateTimeout } from "index";
+import { validateTimeout } from "../dist/index.js";
 
 test("validateTimeout util function returns default timer value when argument data-type is invalid", () => {
     const resultOne = validateTimeout("1000");

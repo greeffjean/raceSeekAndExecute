@@ -1,4 +1,4 @@
-import { raceSeekAndExecute } from "index";
+import { raceSeekAndExecute } from "../dist/index.js";
 const query = "#dummy-testId";
 
 test("Seek domNode & execute callback after 2000ms", async () => {

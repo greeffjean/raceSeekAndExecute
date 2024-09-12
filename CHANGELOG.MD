@@ -15,3 +15,10 @@
 `v2.0.1` 
 
 - Update README.MD
+
+`v2.1.1` 
+
+- Convert to typescript package
+- Update package.json dependencies
+- Update package.json
+
