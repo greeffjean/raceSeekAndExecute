@@ -23,3 +23,9 @@
 - Convert to typescript package
 - Update package.json dependencies
 
+---
+
+`v.2.5.5`
+[c3930e4](https://github.com/greeffjean/raceSeekAndExecute/commit/c3930e4996d828bce640d93fc6c5f51038f49520)
+
+- Update module typings
