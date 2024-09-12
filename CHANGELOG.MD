@@ -16,9 +16,10 @@
 
 - Update README.MD
 
-`v2.1.1` 
+---
 
+`v2.1.1` 
+[d3352b5](https://github.com/greeffjean/raceSeekAndExecute/commit/d3352b5146cc7a8e8c95cbeaed03e87a2b571516)
 - Convert to typescript package
 - Update package.json dependencies
-- Update package.json
 

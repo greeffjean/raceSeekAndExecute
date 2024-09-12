@@ -1,6 +1,6 @@
 {
   "name": "raceseekandexecute",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "Seek dom node at x intervals for x amount of time, once found execute x callback",
   "main": "dist/index.js",
   "types": "dist/index.ts",
